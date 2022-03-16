@@ -2,7 +2,7 @@
 
 ### install
 
-composer require jasonchen/utilities
+composer require jasonchen/utilities dev-main
 
 ### usage
 
