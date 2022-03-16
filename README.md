@@ -10,20 +10,26 @@ composer require jasonchen/utilities dev-main
 
 $util = new Util();
 
-$util->logs('Repo', 'register message strings', 'api', **DIR**);
+$util->logs(&lt;repo&gt;, &lt;message strings&gt;, &lt;extra path&gt;, &lt;root path&gt;);
+
+---
 
 ### accunix api usage
 
-$accunix = new AccunixLineApi(<bot id>);
+$accunix = new AccunixLineApi(&lt;bot id&gt;);
 
-$accunix->setAccessToken(<access token>);
+$accunix->setAccessToken(&lt;access token&gt;);
 
-$response = $accunix->sendMessages(<user token>, <message body>);
+$response = $accunix->sendMessages(&lt;user token&gt;, &lt;message body&gt;);
+
+---
 
 ### kafka rest api usage
 
-$kafka = new KafkaRest(<kafka rest url>, <log path>);
+$kafka = new KafkaRest(&lt;kafka rest url&gt;, &lt;log path&gt;);
 
-$kafka->setTopicName(<topic name>);
+$kafka->setTopicName(&lt;topic name&gt;);
 
-$result = $kafka->push(<value>, <key>);
+$result = $kafka->push(&lt;value&gt;, &lt;key&gt;);
+
+---
