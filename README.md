@@ -1,9 +1,9 @@
 # utility
 
-## install
+### install
 composer require jasonchen/utilities
 
-## usage
+### usage
 $util = new Util();
 
 $util->logs('Repo', 'register message strings', 'api', __DIR__);
