@@ -14,8 +14,16 @@ $util->logs('Repo', 'register message strings', 'api', **DIR**);
 
 ### accunix api usage
 
-$accunix = new AccunixLineApi(<Bot Id>);
+$accunix = new AccunixLineApi(<bot id>);
 
-$accunix->setAccessToken(<Access Token>);
+$accunix->setAccessToken(<access token>);
 
-$response = $accunix->sendMessages(<user_token>, <Message Body>);
+$response = $accunix->sendMessages(<user token>, <message body>);
+
+### kafka rest api usage
+
+$kafka = new KafkaRest(<kafka rest url>, <log path>);
+
+$kafka->setTopicName(<topic name>);
+
+$result = $kafka->push(<value>, <key>);

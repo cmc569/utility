@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "Jasonchen\\Util\\": "src/libraries",
-            "Jasonchen\\Accunix\\": "src/accunix"
+            "Jasonchen\\Accunix\\": "src/accunix",
+            "Jasonchen\\Kafka\\": "src/kafka"
         }
     },
     "minimum-stability": "dev",
