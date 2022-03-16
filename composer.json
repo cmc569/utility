@@ -1,0 +1,15 @@
+{
+    "name": "jasonchen/utilities",
+    "description": "utilities",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jasonchen\\Util\\": "src/libraries"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2"
+    }
+}
